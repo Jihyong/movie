@@ -1,0 +1,316 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+	<!-- Basic Page Needs -->
+        <meta charset="utf-8">
+        <title>영화예매시스템</title>
+        <meta name="description" content="A Template by Gozha.net">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Gozha.net">
+    
+    <!-- Mobile Specific Metas-->
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="telephone=no" name="format-detection">
+    
+    <!-- Fonts -->
+        <!-- Font awesome - icon font -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Roboto -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,700' rel='stylesheet' type='text/css'>
+        <!-- Open Sans -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:800italic' rel='stylesheet' type='text/css'>
+    
+    <!-- Stylesheets -->
+
+        <!-- Mobile menu -->
+        <link href="css/gozha-nav.css" rel="stylesheet" />
+        <!-- Select -->
+        <link href="css/external/jquery.selectbox.css" rel="stylesheet" />
+
+        <!-- Slider Revolution CSS Files -->
+        <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+        <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+        <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+    
+        <!-- Custom -->
+        <link href="css/style.css?v=1" rel="stylesheet" />
+
+
+        <!-- Modernizr --> 
+        <script src="js/external/modernizr.custom.js"></script>
+    
+    
+</head>
+
+<body>
+
+        <!-- Header section -->
+        <header class="header-wrapper header-wrapper--home">
+            <div class="container">
+                <!-- Logo link-->
+                <a href='index.html' class="logo">
+                    <img alt='logo' src="images/logo2.gif">
+                </a>
+                
+                <!-- Main website navigation-->
+                <nav id="navigation-box">
+                    <!-- Toggle for mobile menu mode -->
+                    <a href="#" id="navigation-toggle">
+                        <span class="menu-icon">
+                            <span class="icon-toggle" role="button" aria-label="Toggle Navigation">
+                              <span class="lines"></span>
+                            </span>
+                        </span>
+                    </a>
+              
+                
+                <!-- Additional header buttons / Auth and direct link to booking-->
+                <div class="control-panel">
+                    <div class="auth auth--home">
+                      <div class="auth__show">
+                        <span class="auth__image">
+                          <img alt="" src="images/client-photo/auth.png">
+                        </span>
+                      </div>
+                      <a href="#" class="btn btn--sign btn--singin">
+                          me
+                      </a>
+                        <ul class="auth__function">
+                            <li><a href="#" class="auth__function-item">Watchlist</a></li>
+                            <li><a href="#" class="auth__function-item">Booked tickets</a></li>
+                            <li><a href="#" class="auth__function-item">Discussion</a></li>
+                            <li><a href="#" class="auth__function-item">Settings</a></li>
+                        </ul>
+
+                    </div>
+                    <a href="#" class="btn btn-md btn--warning btn--book btn-control--home login-window">영화 예매하러 가기</a>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Slider -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+        
+        <!-- Main content -->
+        <section class="container">
+            <div class="movie-best">
+                 <div class="col-sm-10 col-sm-offset-1 movie-best__rating">현재 상영중인 영화</div>
+                 <div class="col-sm-12 change--col">
+                     <div class="movie-beta__item ">
+                        <img alt='' src="images/movie/parasite.jpg">
+                         <span class="best-rate">5.0</span>
+
+                         <ul class="movie-beta__info">
+                             <li><span class="best-voted">기생충(Parasite)</span></li>
+                                <p class="movie__time">131분</p>
+                                <p>드라마 </p>
+                                <p>현재누적 : 830만명</p>
+                             </li>
+                             <li class="last-block">
+                                 <a href="parasite.html" class="slide__link">more</a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="movie-beta__item second--item">
+                         <img alt='' src="images/movie/toy4.jpg">
+                         <span class="best-rate">5.0</span>
+
+                         <ul class="movie-beta__info">
+                             <li><span class="best-voted">토이스토리4(Toy story4)</span></li>
+                                <p class="movie__time">100분</p>
+                                <p>애니메이션 | 모험 | 코미디 | 가족 | 판타지 </p>
+                                <p>현재누적 : 142만명</p>
+                             </li>
+                             <li class="last-block">
+                                 <a href="toy.html" class="slide__link">more</a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="movie-beta__item third--item">
+                         <img alt='' src="images/movie/aladin.jpg">
+                         <span class="best-rate">5.0</span>
+
+                         <ul class="movie-beta__info">
+                             <li><span class="best-voted">알라딘(Aladin)</span></li>
+                                <p class="movie__time">128분</p>
+                                <p>애니메이션 | 모험 | 가족 | 뮤지컬 | 멜로 </p>
+                                <p>현재누적 : 584만명</p>
+                             </li>
+                             <li class="last-block">
+                                 <a href="aladin.html" class="slide__link">more</a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="movie-beta__item hidden-xs">
+                         <img alt='' src="images/movie/long.jpg">
+                         <span class="best-rate">5.0</span>
+
+                         <ul class="movie-beta__info">
+                             <li><span class="best-voted">롱 리브 더 킹 : 목포 영웅(Long Live the king)</span></li>
+                                <p class="movie__time">118분</p>
+                                <p>드라마 | 액션   </p>
+                                <p>현재누적 : 24만명</p>
+                             </li>
+                             <li class="last-block">
+                                 <a href="long.html" class="slide__link">more</a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="movie-beta__item hidden-xs hidden-sm">
+                         <img alt='' src="images/movie/man.jpg">
+                         <span class="best-rate">5.0</span>
+
+                         <ul class="movie-beta__info">
+                             <li><span class="best-voted">맨인블랙 : 인터내셔널 </span></li>
+                             <li>
+                                <p class="movie__time">115분</p>
+                                <p>액션 | 코미디 | SF </p>
+                                <p>현재누적 : 76만명</p>
+                             </li>
+                             <li class="last-block">
+                                 <a href="man.html" class="slide__link">more</a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="movie-beta__item hidden-xs hidden-sm">
+                         <img alt='' src="images/movie/satan.jpg">
+                         <span class="best-rate">5.0</span>
+
+                         <ul class="movie-beta__info">
+                             <li><span class="best-voted">사탄의 인형</span></li>
+                             <li>
+                                <p class="movie__time">90분</p>
+                                <p>공포</p>
+                                <p>현재누적 : 1만명</p>
+                             </li>
+                             <li class="last-block">
+                                 <a href="satan.html" class="slide__link">more</a>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+            </div>
+
+
+            
+            <div class="clearfix"></div>
+
+
+
+        </section>
+        
+        <div class="clearfix"></div>
+
+        <footer class="footer-wrapper">
+            <section class="container">
+                <div class="col-xs-12 col-md-6">
+                    <div class="footer-info">
+                        <p class="heading-special--small" style="text-align:center" >영화예매시스템<br><span class="title-edition" style="text-align:center" >정시설 프로젝트</span></p>
+
+                        <div class="social" style="text-align:center" >
+                            <a href='#' class="social__variant fa fa-facebook"	></a>
+                            <a href='#' class="social__variant fa fa-twitter"></a>
+                            <a href='#' class="social__variant fa fa-vk"></a>
+                            <a href='#' class="social__variant fa fa-instagram"></a>
+                            <a href='#' class="social__variant fa fa-tumblr"></a>
+                            <a href='#' class="social__variant fa fa-pinterest"></a>
+                        </div>
+                        
+                        <div class="clearfix"></div>
+                        <p class="copy"style="text-align:center">&copy; 영화예매시스템 39조, 2019. All rights reserved.</p>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <!-- open/close -->
+        <div class="overlay overlay-hugeinc">
+            
+            <section class="container">
+
+                <div class="col-sm-4 col-sm-offset-4">
+                    <button type="button" class="overlay-close">Close</button>
+                    <form id="login-form" class="login" method='get' novalidate=''>
+                        <p class="login__title">sign in <br><span class="login-edition">영화예매시스템에 오신걸 환영합니다.</span></p>
+
+
+                        <div class="field-wrap">
+                        <input type='email' placeholder='Email' name='user-email' class="login__input">
+                        <input type='password' placeholder='Password' name='user-password' class="login__input">
+
+                        <input type='checkbox' id='#informed' class='login__check styled'>
+                        <label for='#informed' class='login__check-info'>remember me</label>
+                         </div>
+                        
+                        <div class="login__control">
+                            <button type='submit' class="btn btn-md btn--warning btn--wider">로그인</button>
+                            <a href="#" class="login__tracker form__tracker">비밀번호를 잊어버렸습니까?</a>
+                        </div>
+                    </form>
+                </div>
+
+            </section>
+        </div>
+
+	<!-- JavaScript-->
+        <!-- jQuery 3.1.1--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/external/jquery-3.1.1.min.js"><\/script>')</script>
+        <!-- Migrate --> 
+        <script src="js/external/jquery-migrate-1.2.1.min.js"></script>
+        <!-- Bootstrap 3--> 
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+        <!-- Slider Revolution core JavaScript files -->
+        <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+        <!-- Slider Revolution extension scripts. --> 
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+        <!-- Mobile menu -->
+        <script src="js/jquery.mobile.menu.js"></script>
+         <!-- Select -->
+        <script src="js/external/jquery.selectbox-0.2.min.js"></script>
+        <!-- Stars rate -->
+        <script src="js/external/jquery.raty.js"></script>
+        
+        <!-- Form element -->
+        <script src="js/external/form-element.js"></script>
+        <!-- Form validation -->
+        <script src="js/form.js"></script>
+
+        <!-- Twitter feed -->
+        <script src="js/external/twitterfeed.js"></script>
+
+        <!-- Custom -->
+        <script src="js/custom.js"></script>
+		
+	      <script type="text/javascript">
+              $(document).ready(function() {
+                init_Home();
+              });
+		    </script>
+
+</body>
+</html>

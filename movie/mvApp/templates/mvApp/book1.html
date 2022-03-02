@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Basic Page Needs -->
+        <meta charset="utf-8">
+        <title>영화예매시스템</title>
+        <meta name="description" content="A Template by Gozha.net">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Gozha.net">
+    
+    <!-- Mobile Specific Metas-->
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="telephone=no" name="format-detection">
+    
+    <!-- Fonts -->
+        <!-- Font awesome - icon font -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Roboto -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Stylesheets -->
+    <!-- jQuery UI --> 
+        <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+
+        <!-- Mobile menu -->
+        <link href="css/gozha-nav.css" rel="stylesheet" />
+        <!-- Select -->
+        <link href="css/external/jquery.selectbox.css" rel="stylesheet" />
+        <!-- Swiper slider -->
+        <link href="css/external/idangerous.swiper.css" rel="stylesheet" />
+    
+        <!-- Custom -->
+        <link href="css/style.css?v=1" rel="stylesheet" />
+
+        <!-- Modernizr --> 
+        <script src="js/external/modernizr.custom.js"></script>
+    
+    
+</head>
+        <!-- Header section -->
+        <header class="header-wrapper header-wrapper--home">
+            <div class="container">
+                <!-- Logo link-->
+                <a href='index.html' class="logo">
+                    <img alt='logo' src="images/logo2.gif">
+                </a>
+                
+                <!-- Main website navigation-->
+                <nav id="navigation-box">
+                    <!-- Toggle for mobile menu mode -->
+                    <a href="#" id="navigation-toggle">
+                        <span class="menu-icon">
+                            <span class="icon-toggle" role="button" aria-label="Toggle Navigation">
+                              <span class="lines"></span>
+                            </span>
+                        </span>
+                    </a>
+                <!-- Additional header buttons / Auth and direct link to booking-->
+                <div class="control-panel">
+                    <a href="#" class="btn btn-md btn--warning btn--book login-window">영화 예매하러 가기</a>
+                </div>
+
+            </div>
+        </header>
+        
+<br>
+<br>
+<br>
+<br>
+                
+        <!-- Main content -->
+
+        <section class="container">
+            <div class="order-container">
+                <div class="order">
+                    <img class="order__images" alt='' src="images/black1positive.gif">
+                    <p class="order__title">영화 예매하기 <br></p>
+                    </div>
+                </div>
+            </div>
+                <div class="order-step-area">
+                    <div class="order-step first--step">1. 예매 필수사항</div>
+                </div>
+
+            <h2 class="page-heading heading--outcontainer">영화를 선택하세요</h2>
+        </section>
+        
+        <div class="choose-film">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <!--First Slide-->
+                  <div class="swiper-slide" data-film='기생충(Parasite)'> 
+                        <div class="film-images">
+                            <img alt='' src="images/movie/prasite2.jpg">
+                        </div>
+                        <p class="choose-film__title">기생충(Parasite)</p>
+                  </div>
+                  
+                  <!--Second Slide-->
+                  <div class="swiper-slide" data-film='롱 리브 인 더 킹 : 목포영웅 (Long live in the King)'>
+                        <div class="film-images">
+                            <img alt='' src="images/movie/long2.jpg">
+                        </div>
+                        <p class="choose-film__title">롱 리브 인 더 킹 : 목포영웅 (Long live in the King)</p>
+                  </div>
+                  
+                  <!--Third Slide-->
+                  <div class="swiper-slide" data-film='알라딘(Aladdin)'> 
+                        <div class="film-images">
+                            <img alt='' src="images/movie/aladin2.jpg">
+                        </div>
+                        <p class="choose-film__title">알라딘(Aladdin)</p>
+                  </div>
+                  
+                  <!--Four Slide-->
+                  <div class="swiper-slide" data-film='사탄의 인형(Childs Play)'> 
+                        <div class="film-images">
+                            <img alt='' src="images/movie/satan2.jpg">
+                        </div>
+                        <p class="choose-film__title">사탄의 인형(Child's Play)</p>
+                  </div>
+
+                  <!--Five Slide-->
+                  <div class="swiper-slide" data-film='토이스토리4 (Toy Story4)'> 
+                        <div class="film-images">
+                            <img alt='' src="images/movie/toy4.jpg">
+                        </div>
+                        <p class="choose-film__title">토이스토리 4 (Toy Story4)</p>
+                  </div>
+
+                  <!--Six Slide-->
+                  <div class="swiper-slide" data-film='맨 인 블랙 : 인터내셔널 (Men In BLACK : International)'> 
+                        <div class="film-images">
+                            <img alt='' src="images/movie/man2.jpg">
+                        </div>
+                        <p class="choose-film__title">맨 인 블랙 : 인터내셔널 (Men In BLACK : International)</p>
+                  </div>
+
+              </div>
+            </div>
+        </div>
+
+        <section class="container">
+            <div class="col-sm-12">
+                <div class="choose-indector choose-indector--film">
+                    <strong>선택영화 : </strong><span class="choosen-area"></span>
+                </div>
+
+                <h2 class="page-heading"> 상영관 &amp; 날짜 </h2>
+
+                <div class="choose-container choose-container--short">
+                    <form id='select' class="select" method='get'>
+                          <select name="select_item" id="select-sort" class="select__sort" tabindex="0">
+                            <option value="1" selected='selected'>서울</option>
+                        </select>
+                    </form>
+
+                    <div class="datepicker">
+                      <span class="datepicker__marker"><i class="fa fa-calendar"></i>Date</span>
+                      <input type="text" id="datepicker" value='2019/06/24' class="datepicker__input">
+                    </div>
+                </div>
+
+                <h2 class="page-heading"></h2>
+
+                <div class="time-select time-select--wide">
+                        <div class="time-select__group group--first">
+                            <div class="col-sm-3">
+                                <p class="time-select__place">안암</p>
+                            </div>
+                            <ul class="col-sm-6 items-wrap">
+                                <li class="time-select__item" data-time='09:40'>09:40</li>
+                                <li class="time-select__item" data-time='13:45'>13:45</li>
+                                <li class="time-select__item" data-time='15:45'>15:45</li>
+                                <li class="time-select__item" data-time='19:50'>19:50</li>
+                                <li class="time-select__item" data-time='21:50'>21:50</li>
+                            </ul>
+                        </div>
+
+                        <div class="time-select__group">
+                            <div class="col-sm-3">
+                                <p class="time-select__place">신촌</p>
+                            </div>
+                            <ul class="col-sm-6 items-wrap">
+                                <li class="time-select__item" data-time='10:45'>10:45</li>
+                                <li class="time-select__item" data-time='16:00'>16:00</li>
+                                <li class="time-select__item" data-time='19:00'>19:00</li>
+                                <li class="time-select__item" data-time='21:15'>21:15</li>
+                                <li class="time-select__item" data-time='23:00'>23:00</li>
+                            </ul>
+                        </div>
+
+                        <div class="time-select__group">
+                            <div class="col-sm-3">
+                                <p class="time-select__place">왕십리</p>
+                            </div>
+                            <ul class="col-sm-6 items-wrap">
+                                <li class="time-select__item" data-time='09:00'>09:00</li>
+                                <li class="time-select__item" data-time='11:00'>11:00</li>
+                                <li class="time-select__item" data-time='13:00'>13:00</li>
+                                <li class="time-select__item" data-time='15:00'>15:00</li>
+                                <li class="time-select__item" data-time='17:00'>17:00</li>
+                                <li class="time-select__item" data-time='19:00'>19:00</li>
+                                <li class="time-select__item" data-time='21:00'>21:00</li>
+                                <li class="time-select__item" data-time='23:00'>23:00</li>
+                                <li class="time-select__item" data-time='01:00'>01:00</li>
+                            </ul>
+                        </div>
+
+                        <div class="time-select__group">
+                            <div class="col-sm-3">
+                                <p class="time-select__place">청량리</p>
+                            </div>
+                            <ul class="col-sm-6 items-wrap">
+                                <li class="time-select__item" data-time='10:45'>10:45</li>
+                                <li class="time-select__item" data-time='16:00'>16:00</li>
+                                <li class="time-select__item" data-time='19:00'>19:00</li>
+                                <li class="time-select__item" data-time='21:15'>21:15</li>
+                                <li class="time-select__item" data-time='23:00'>23:00</li>
+                            </ul>
+                        </div>
+
+                        <div class="time-select__group group--last">
+                            <div class="col-sm-3">
+                                <p class="time-select__place">동대문</p>
+                            </div>
+                            <ul class="col-sm-6 items-wrap">
+                                <li class="time-select__item" data-time='17:45'>17:45</li>
+                                <li class="time-select__item" data-time='21:30'>21:30</li>
+                                <li class="time-select__item" data-time='02:20'>02:20</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                <div class="choose-indector choose-indector--time">
+                    <strong>선택 시간 : </strong><span class="choosen-area"></span>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="clearfix"></div>
+
+        <form id='film-and-time' class="booking-form" method='get' action='book2.html'>
+            <input type='text' name='choosen-movie' class="choosen-movie">
+
+            <input type='text' name='choosen-city' class="choosen-city">
+            <input type='text' name='choosen-date' class="choosen-date">
+            
+            <input type='text' name='choosen-cinema' class="choosen-cinema">
+            <input type='text' name='choosen-time' class="choosen-time">
+        
+
+            <div class="booking-pagination">
+                    <a href="#" class="booking-pagination__prev hide--arrow">
+                        <span class="arrow__text arrow--prev"></span>
+                        <span class="arrow__info"></span>
+                    </a>
+                    <a href="book2.html" class="booking-pagination__next">
+                        <span class="arrow__text arrow--next">다음 단계로</span>
+                        <span class="arrow__info">자리 선택하기</span>
+                    </a>
+            </div>
+
+        </form>
+        
+        <div class="clearfix"></div>
+
+               </section>
+        
+        <div class="clearfix"></div>
+
+        <footer class="footer-wrapper">
+            <section class="container">
+                <div class="col-xs-12 col-md-6">
+                    <div class="footer-info">
+                        <p class="heading-special--small" style="text-align:center" >영화예매시스템<br><span class="title-edition" style="text-align:center" >정시설 프로젝트</span></p>
+
+                        <div class="social" style="text-align:center" >
+                            <a href='#' class="social__variant fa fa-facebook"	></a>
+                            <a href='#' class="social__variant fa fa-twitter"></a>
+                            <a href='#' class="social__variant fa fa-vk"></a>
+                            <a href='#' class="social__variant fa fa-instagram"></a>
+                            <a href='#' class="social__variant fa fa-tumblr"></a>
+                            <a href='#' class="social__variant fa fa-pinterest"></a>
+                        </div>
+                        
+                        <div class="clearfix"></div>
+                        <p class="copy"style="text-align:center">&copy; 영화예매시스템 39조, 2019. All rights reserved.</p>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <!-- open/close -->
+        <div class="overlay overlay-hugeinc">
+            
+            <section class="container">
+
+                <div class="col-sm-4 col-sm-offset-4">
+                    <button type="button" class="overlay-close">Close</button>
+                    <form id="login-form" class="login" method='get' novalidate=''>
+                        <p class="login__title">sign in <br><span class="login-edition">welcome to A.Movie</span></p>
+
+                        <div class="social social--colored">
+                                <a href='#' class="social__variant fa fa-facebook"></a>
+                                <a href='#' class="social__variant fa fa-twitter"></a>
+                                <a href='#' class="social__variant fa fa-tumblr"></a>
+                        </div>
+
+                        <p class="login__tracker">or</p>
+                        
+                        <div class="field-wrap">
+                        <input type='email' placeholder='Email' name='user-email' class="login__input">
+                        <input type='password' placeholder='Password' name='user-password' class="login__input">
+
+                        <input type='checkbox' id='#informed' class='login__check styled'>
+                        <label for='#informed' class='login__check-info'>remember me</label>
+                         </div>
+                        
+                        <div class="login__control">
+                            <button type='submit' class="btn btn-md btn--warning btn--wider">sign in</button>
+                            <a href="#" class="login__tracker form__tracker">Forgot password?</a>
+                        </div>
+                    </form>
+                </div>
+
+            </section>
+        </div>
+
+	<!-- JavaScript-->
+        <!-- jQuery 3.1.1--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/external/jquery-3.1.1.min.js"><\/script>')</script>
+        <!-- Migrate --> 
+        <script src="js/external/jquery-migrate-1.2.1.min.js"></script>
+        <!-- jQuery UI -->
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <!-- Bootstrap 3--> 
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+        <!-- Mobile menu -->
+        <script src="js/jquery.mobile.menu.js"></script>
+         <!-- Select -->
+        <script src="js/external/jquery.selectbox-0.2.min.js"></script>
+        <!-- Swiper slider -->
+        <script src="js/external/idangerous.swiper.min.js"></script>
+
+        <!-- Form element -->
+        <script src="js/external/form-element.js"></script>
+        <!-- Form validation -->
+        <script src="js/form.js"></script>
+
+        <!-- Custom -->
+        <script src="js/custom.js"></script>
+		
+		<script type="text/javascript">
+            $(document).ready(function() {
+                init_BookingOne();
+            });
+		</script>
+
+</body>
+</html>
